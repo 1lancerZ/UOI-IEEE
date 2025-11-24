@@ -48,6 +48,43 @@
     background-size: 50px 50px;
   }
   
+  /* Advisors Section */
+  .advisors-section {
+    margin-bottom: 5rem;
+  }
+
+  .advisors-grid {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 3rem;
+  }
+
+  .advisor-card .member-info {
+    text-align: left;
+    padding: 0 2rem 2.5rem;
+  }
+
+  .advisor-card .member-photo {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 1.5rem;
+  }
+
+  .advisor-card h3 {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+
+  .advisor-card .position {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .advisor-card .bio {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+  }
+
   /* 响应式 */
   @media (max-width: 992px) {
     .about-header h1 {
@@ -70,6 +107,14 @@
   
     .mission-content h2 {
       font-size: 1.8rem;
+    }
+
+    .advisors-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .advisor-card .member-info {
+      padding: 0 1.5rem 2rem;
     }
   }
   
